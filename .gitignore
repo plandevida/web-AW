@@ -26,3 +26,7 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+*.sassc
+
+.sass-cache/d27dc016d21b8c994621298410f76790957a8fbb/screen.sassc
