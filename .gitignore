@@ -28,4 +28,5 @@ node_modules
 .lock-wscript
 
 # Sass file chache
-.sass-cache
+*sass-cache*
+*.sass-cache
