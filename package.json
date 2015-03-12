@@ -7,7 +7,10 @@
   "scripts": {
     "start":"node ./bin/www",
     "compile":"npm run compile-compass && npm run start",
-    "compile-compass":"compass compile"
+    "compile-compass":"compass compile",
+    "watch-sass":"compass watch . &",
+    "stop-watch-sass":"kill -9 compass",
+    "devmode":"npm run watch-sass && npm run start"
   },
   "repository":{
     "type":"git",

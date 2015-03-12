@@ -1,0 +1,827 @@
+doctype html
+html
+  head
+    title Free Leoshop Website Template | Mens :: w3layouts
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    link(href='/stylesheets/leoshop//style.css', rel='stylesheet', type='text/css', media='all')
+    link(href='/stylesheets/leoshop//form.css', rel='stylesheet', type='text/css', media='all')
+    link(href='http://fonts.googleapis.com/css?family=Exo+2', rel='stylesheet', type='text/css')
+    script(src='/javascripts/leoshop/jquery1.min.js')
+    // start menu
+    link(href='/stylesheets/leoshop//megamenu.css', rel='stylesheet', type='text/css', media='all')
+    script(type='text/javascript', src='/javascripts/leoshop/megamenu.js')
+    script.
+      $(document).ready(function(){$(".megamenu").megamenu();});
+    script(type='text/javascript', src='/javascripts/leoshop/jquery.jscrollpane.min.js')
+    script#sourcecode(type='text/javascript').
+      $(function()
+      {
+      $('.scroll-pane').jScrollPane();
+      });
+  body
+    .header-top
+      .wrap
+        .header-top-left
+          .box
+            select.dropdown(tabindex='4')
+              option.label(value='') Language :
+              option(value='1') English
+              option(value='2') French
+              option(value='3') German
+          .box1
+            select.dropdown(tabindex='4')
+              option.label(value='') Currency :
+              option(value='1') $ Dollar
+              option(value='2') € Euro
+          .clear
+        .cssmenu
+          ul
+            li.active
+              a(href='login.html') Account
+            |  |
+            li
+              a(href='checkout.html') Wishlist
+            |  |
+            li
+              a(href='checkout.html') Checkout
+            |  |
+            li
+              a(href='login.html') Log In
+            |  |
+            li
+              a(href='register.html') Sign Up
+        .clear
+    .header-bottom
+      .wrap
+        .header-bottom-left
+          .logo
+            a(href='index.html')
+              img(src='/images/leoshop/logo.png', alt='')
+          .menu
+            ul.megamenu.skyblue
+              li.active.grid
+                a(href='index.html') Home
+              li
+                a.color4(href='#') women
+                .megapanel
+                  .row
+                    .col1
+                      .h_nav
+                        h4 Contact Lenses
+                        ul
+                          li
+                            a(href='womens.html') Daily-wear soft lenses
+                          li
+                            a(href='womens.html') Extended-wear
+                          li
+                            a(href='womens.html') Lorem ipsum 
+                          li
+                            a(href='womens.html') Planned replacement
+                    .col1
+                      .h_nav
+                        h4 Sun Glasses
+                        ul
+                          li
+                            a(href='womens.html') Heart-Shaped
+                          li
+                            a(href='womens.html') Square-Shaped
+                          li
+                            a(href='womens.html') Round-Shaped
+                          li
+                            a(href='womens.html') Oval-Shaped
+                    .col1
+                      .h_nav
+                        h4 Eye Glasses
+                        ul
+                          li
+                            a(href='womens.html') Anti Reflective
+                          li
+                            a(href='womens.html') Aspheric
+                          li
+                            a(href='womens.html') Bifocal
+                          li
+                            a(href='womens.html') Hi-index
+                          li
+                            a(href='womens.html') Progressive
+              li
+                a.color5(href='#') Men
+                .megapanel
+                  .col1
+                    .h_nav
+                      h4 Contact Lenses
+                      ul
+                        li
+                          a(href='mens.html') Daily-wear soft lenses
+                        li
+                          a(href='mens.html') Extended-wear
+                        li
+                          a(href='mens.html') Lorem ipsum 
+                        li
+                          a(href='mens.html') Planned replacement
+                  .col1
+                    .h_nav
+                      h4 Sun Glasses
+                      ul
+                        li
+                          a(href='mens.html') Heart-Shaped
+                        li
+                          a(href='mens.html') Square-Shaped
+                        li
+                          a(href='mens.html') Round-Shaped
+                        li
+                          a(href='mens.html') Oval-Shaped
+                  .col1
+                    .h_nav
+                      h4 Eye Glasses
+                      ul
+                        li
+                          a(href='mens.html') Anti Reflective
+                        li
+                          a(href='mens.html') Aspheric
+                        li
+                          a(href='mens.html') Bifocal
+                        li
+                          a(href='mens.html') Hi-index
+                        li
+                          a(href='mens.html') Progressive
+              li
+                a.color6(href='other.html') Other
+              li
+                a.color7(href='other.html') Purchase
+        .header-bottom-right
+          .search
+            input.textbox(type='text', name='s', value='Search', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Search';}")
+            input#submit(type='submit', value='Subscribe', name='submit')
+            #response  
+          .tag-list
+            ul.icon1.sub-icon1.profile_img
+              li
+                a.active-icon.c1(href='#')  
+                ul.sub-icon1.list
+                  li
+                    h3 sed diam nonummy
+                    a(href='')
+                  li
+                    p
+                      | Lorem ipsum dolor sit amet, consectetuer  
+                      a(href='') adipiscing elit, sed diam
+            ul.icon1.sub-icon1.profile_img
+              li
+                a.active-icon.c2(href='#')  
+                ul.sub-icon1.list
+                  li
+                    h3 No Products
+                    a(href='')
+                  li
+                    p
+                      | Lorem ipsum dolor sit amet, consectetuer  
+                      a(href='') adipiscing elit, sed diam
+            ul.last
+              li
+                a(href='#') Cart(0)
+        .clear
+    .mens
+      .main
+        .wrap
+          .cont.span_2_of_3
+            h2.head Men's
+            .mens-toolbar
+              .sort
+                .sort-by
+                  label Sort By
+                  select
+                    option(value='')
+                      | Position
+                    option(value='')
+                      | Name
+                    option(value='')
+                      | Price
+                  a(href='')
+                    img.v-middle(src='/images/leoshop/arrow2.gif', alt='')
+              .pager
+                .limiter.visible-desktop
+                  label Show
+                  select
+                    option(value='', selected='selected')
+                      | 9
+                    option(value='')
+                      | 15
+                    option(value='')
+                      | 30
+                  |  per page
+                ul.dc_pagination.dc_paginationA.dc_paginationA06
+                  li
+                    a.previous(href='#') Pages
+                  li
+                    a(href='#') 1
+                  li
+                    a(href='#') 2
+                .clear
+              .clear
+            .top-box
+              .col_1_of_3.span_1_of_3
+                a(href='single.html')
+                  .inner_content.clearfix
+                    .product_image
+                      img(src='/images/leoshop/pic.jpg', alt='')
+                    .sale-box
+                      span.on_sale.title_shop New
+                    .price
+                      .cart-left
+                        p.title Lorem Ipsum simply
+                        .price1
+                          span.actual $12.00
+                      .cart-right  
+                      .clear
+              .col_1_of_3.span_1_of_3
+                a(href='single.html')
+                  .inner_content.clearfix
+                    .product_image
+                      img(src='/images/leoshop/pic1.jpg', alt='')
+                    .price
+                      .cart-left
+                        p.title Lorem Ipsum simply
+                        .price1
+                          span.actual $12.00
+                      .cart-right  
+                      .clear
+              .col_1_of_3.span_1_of_3
+                a(href='single.html')
+                  .inner_content.clearfix
+                    .product_image
+                      img(src='/images/leoshop/pic2.jpg', alt='')
+                    .sale-box1
+                      span.on_sale.title_shop Sale
+                    .price
+                      .cart-left
+                        p.title Lorem Ipsum simply
+                        .price1
+                          span.reducedfrom $66.00
+                          span.actual $12.00
+                      .cart-right  
+                      .clear
+              .clear
+            .top-box
+              .col_1_of_3.span_1_of_3
+                a(href='single.html')
+                  .inner_content.clearfix
+                    .product_image
+                      img(src='/images/leoshop/pic3.jpg', alt='')
+                    .price
+                      .cart-left
+                        p.title Lorem Ipsum simply
+                        .price1
+                          span.actual $12.00
+                      .cart-right  
+                      .clear
+              .col_1_of_3.span_1_of_3
+                a(href='single.html')
+                  .inner_content.clearfix
+                    .product_image
+                      img(src='/images/leoshop/pic4.jpg', alt='')
+                    .sale-box
+                      span.on_sale.title_shop New
+                    .price
+                      .cart-left
+                        p.title Lorem Ipsum simply
+                        .price1
+                          span.actual $12.00
+                      .cart-right  
+                      .clear
+              .col_1_of_3.span_1_of_3
+                a(href='single.html')
+                  .inner_content.clearfix
+                    .product_image
+                      img(src='/images/leoshop/pic5.jpg', alt='')
+                    .price
+                      .cart-left
+                        p.title Lorem Ipsum simply
+                        .price1
+                          span.actual $12.00
+                      .cart-right  
+                      .clear
+              .clear
+            .top-box1
+              .col_1_of_3.span_1_of_3
+                a(href='single.html')
+                  .inner_content.clearfix
+                    .product_image
+                      img(src='/images/leoshop/pic6.jpg', alt='')
+                    .sale-box
+                      span.on_sale.title_shop New
+                    .price
+                      .cart-left
+                        p.title Lorem Ipsum simply
+                        .price1
+                          span.actual $12.00
+                      .cart-right  
+                      .clear
+              .col_1_of_3.span_1_of_3
+                a(href='single.html')
+                  .inner_content.clearfix
+                    .product_image
+                      img(src='/images/leoshop/pic7.jpg', alt='')
+                    .sale-box1
+                      span.on_sale.title_shop Sale
+                    .price
+                      .cart-left
+                        p.title Lorem Ipsum simply
+                        .price1
+                          span.reducedfrom $66.00
+                          span.actual $12.00
+                      .cart-right  
+                      .clear
+              .col_1_of_3.span_1_of_3
+                a(href='single.html')
+                  .inner_content.clearfix
+                    .product_image
+                      img(src='/images/leoshop/pic8.jpg', alt='')
+                    .sale-box
+                      span.on_sale.title_shop New
+                    .price
+                      .cart-left
+                        p.title Lorem Ipsum simply
+                        .price1
+                          span.actual $12.00
+                      .cart-right  
+                      .clear
+              .clear
+            h2.head Staff Pick
+            .top-box1
+              .col_1_of_3.span_1_of_3
+                a(href='single.html')
+                  .inner_content.clearfix
+                    .product_image
+                      img(src='/images/leoshop/pic8.jpg', alt='')
+                    .sale-box
+                      span.on_sale.title_shop New
+                    .price
+                      .cart-left
+                        p.title Lorem Ipsum simply
+                        .price1
+                          span.actual $12.00
+                      .cart-right  
+                      .clear
+              .col_1_of_3.span_1_of_3
+                a(href='single.html')
+                  .inner_content.clearfix
+                    .product_image
+                      img(src='/images/leoshop/pic4.jpg', alt='')
+                    .price
+                      .cart-left
+                        p.title Lorem Ipsum simply
+                        .price1
+                          span.actual $12.00
+                      .cart-right  
+                      .clear
+              .col_1_of_3.span_1_of_3
+                a(href='single.html')
+                  .inner_content.clearfix
+                    .product_image
+                      img(src='/images/leoshop/pic2.jpg', alt='')
+                    .sale-box
+                      span.on_sale.title_shop New
+                    .price
+                      .cart-left
+                        p.title Lorem Ipsum simply
+                        .price1
+                          span.actual $12.00
+                      .cart-right  
+                      .clear
+              .clear
+            h2.head New Products
+            .section.group
+              .col_1_of_3.span_1_of_3
+                a(href='single.html')
+                  .inner_content.clearfix
+                    .product_image
+                      img(src='/images/leoshop/pic5.jpg', alt='')
+                    .sale-box
+                      span.on_sale.title_shop New
+                    .price
+                      .cart-left
+                        p.title Lorem Ipsum simply
+                        .price1
+                          span.actual $12.00
+                      .cart-right  
+                      .clear
+              .col_1_of_3.span_1_of_3
+                a(href='single.html')
+                  .inner_content.clearfix
+                    .product_image
+                      img(src='/images/leoshop/pic2.jpg', alt='')
+                    .sale-box
+                      span.on_sale.title_shop New
+                    .price
+                      .cart-left
+                        p.title Lorem Ipsum simply
+                        .price1
+                          span.actual $12.00
+                      .cart-right  
+                      .clear
+              .col_1_of_3.span_1_of_3
+                a(href='single.html')
+                  .inner_content.clearfix
+                    .product_image
+                      img(src='/images/leoshop/pic3.jpg', alt='')
+                    .sale-box
+                      span.on_sale.title_shop New
+                    .price
+                      .cart-left
+                        p.title Lorem Ipsum simply
+                        .price1
+                          span.actual $12.00
+                      .cart-right  
+                      .clear
+              .clear
+          .rsidebar.span_1_of_left
+            h5.m_1 Categories
+            select.dropdown(tabindex='8', data-settings='{"wrapperClass":"metro"}')
+              option(value='1') Mens
+              option(value='2') Sub Category1
+              option(value='3') Sub Category2
+              option(value='4') Sub Category3
+            select.dropdown(tabindex='8', data-settings='{"wrapperClass":"metro"}')
+              option(value='1') Womens
+              option(value='2') Sub Category1
+              option(value='3') Sub Category2
+              option(value='4') Sub Category3
+            ul.kids
+              li
+                a(href='#') Kids
+              li.last
+                a(href='#') Glasses Shop
+            section.sky-form
+              h4 Price
+              .row.row1.scroll-pane
+                .col.col-4
+                  label.checkbox
+                    input(type='checkbox', name='checkbox', checked='')
+                    i
+                    | Rs 500 - Rs 700
+                .col.col-4
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Rs 700 - Rs 1000
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Rs 1000 - Rs 1500
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Rs 1500 - Rs 2000
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Rs 2000 - Rs 2500
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Rs 2500 - Rs 3000
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Rs 3500 - Rs 4000
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Rs 4000 - Rs 4500
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Rs 4500 - Rs 5000
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Rs 5000 - Rs 5500
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Rs 5500 - Rs 6000
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Rs 6000 - Rs 6500
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Rs 6500 - Rs 7000
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Rs 7000 - Rs 7500
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Rs 7500 - Rs 8000
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Rs 8000 - Rs 8500
+            section.sky-form
+              h4 Brand Name
+              .row.row1.scroll-pane
+                .col.col-4
+                  label.checkbox
+                    input(type='checkbox', name='checkbox', checked='')
+                    i
+                    | John Jacobs
+                .col.col-4
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Tag Heuer
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Lee Cooper
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Mikli
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | S Oliver
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Hackett
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Killer
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | IDEE
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Vogue
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Gunnar
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Accu Reader
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | CAT
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Excellent
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Feelgood
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Odysey
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Animal
+            section.sky-form
+              h4 Frame Shape
+              .row.row1.scroll-pane
+                .col.col-4
+                  label.checkbox
+                    input(type='checkbox', name='checkbox', checked='')
+                    i
+                    | Pilot
+                .col.col-4
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Rectangle
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Square
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Round
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Others
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Cat Eyes
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Wrap Around
+            section.sky-form
+              h4 Frame Size
+              .row.row1.scroll-pane
+                .col.col-4
+                  label.checkbox
+                    input(type='checkbox', name='checkbox', checked='')
+                    i
+                    | Small
+                .col.col-4
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Medium
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Large
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Medium
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Large
+            section.sky-form
+              h4 Frame Type
+              .row.row1.scroll-pane
+                .col.col-4
+                  label.checkbox
+                    input(type='checkbox', name='checkbox', checked='')
+                    i
+                    | Full Rim
+                .col.col-4
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Rim Less
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Half Rim
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Rim Less
+                  label.checkbox
+                    input(type='checkbox', name='checkbox')
+                    i
+                    | Half Rim
+            section.sky-form
+              h4 Colors
+              ul.color-list
+                li
+                  a(href='#')
+                    span.color1  
+                    p.red Red
+                li
+                  a(href='#')
+                    span.color2  
+                    p.red Green
+                li
+                  a(href='#')
+                    span.color3  
+                    p.red Blue
+                li
+                  a(href='#')
+                    span.color4  
+                    p.red Yellow
+                li
+                  a(href='#')
+                    span.color5  
+                    p.red Violet
+                li
+                  a(href='#')
+                    span.color6  
+                    p.red Orange
+                li
+                  a(href='#')
+                    span.color7  
+                    p.red Gray
+          .clear
+    script(src='/javascripts/leoshop/jquery.easydropdown.js')
+    .footer
+      .footer-top
+        .wrap
+          .section.group.example
+            .col_1_of_2.span_1_of_2
+              ul.f-list
+                li
+                  img(src='/images/leoshop/2.png')
+                  span.f-text Free Shipping on orders over $ 100
+                  .clear
+            .col_1_of_2.span_1_of_2
+              ul.f-list
+                li
+                  img(src='/images/leoshop/3.png')
+                  span.f-text Call us! toll free-222-555-6666 
+                  .clear
+            .clear
+      .footer-middle
+        .wrap
+          .section.group.example
+            .col_1_of_f_1.span_1_of_f_1
+              .section.group.example
+                .col_1_of_f_2.span_1_of_f_2
+                  h3 Facebook
+                  script.
+                    (function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                    fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
+                  .like_box
+                    .fb-like-box(data-href='http://www.facebook.com/w3layouts', data-colorscheme='light', data-show-faces='true', data-header='true', data-stream='false', data-show-border='true')
+                .col_1_of_f_2.span_1_of_f_2
+                  h3 From Twitter
+                  .recent-tweet
+                    .recent-tweet-icon
+                      span  
+                    .recent-tweet-info
+                      p
+                        | Ds which don't look even slightly believable. If you are 
+                        a(href='#') going to use nibh euismod
+                        |  tincidunt ut laoreet adipisicing
+                    .clear  
+                  .recent-tweet
+                    .recent-tweet-icon
+                      span  
+                    .recent-tweet-info
+                      p
+                        | Ds which don't look even slightly believable. If you are 
+                        a(href='#') going to use nibh euismod
+                        |  tincidunt ut laoreet adipisicing
+                    .clear  
+                .clear
+            .col_1_of_f_1.span_1_of_f_1
+              .section.group.example
+                .col_1_of_f_2.span_1_of_f_2
+                  h3 Information
+                  ul.f-list1
+                    li
+                      a(href='#') Duis autem vel eum iriure 
+                    li
+                      a(href='#') anteposuerit litterarum formas 
+                    li
+                      a(href='#') Tduis dolore te feugait nulla
+                    li
+                      a(href='#') Duis autem vel eum iriure 
+                    li
+                      a(href='#') anteposuerit litterarum formas 
+                    li
+                      a(href='#') Tduis dolore te feugait nulla
+                .col_1_of_f_2.span_1_of_f_2
+                  h3 Contact us
+                  .company_address
+                    p 500 Lorem Ipsum Dolor Sit,
+                    p 22-56-2-9 Sit Amet, Lorem,
+                    p USA
+                    p Phone:(00) 222 666 444
+                    p Fax: (000) 000 00 00 0
+                    p
+                      | Email: 
+                      span mail[at]leoshop.com
+                  .social-media
+                    ul
+                      li
+                        span.simptip-position-bottom.simptip-movable(data-tooltip='Google')
+                          a(href='#', target='_blank')  
+                      li
+                        span.simptip-position-bottom.simptip-movable(data-tooltip='Linked in')
+                          a(href='#', target='_blank')  
+                      li
+                        span.simptip-position-bottom.simptip-movable(data-tooltip='Rss')
+                          a(href='#', target='_blank')  
+                      li
+                        span.simptip-position-bottom.simptip-movable(data-tooltip='Facebook')
+                          a(href='#', target='_blank')  
+                .clear
+            .clear
+      .footer-bottom
+        .wrap
+          .copy
+            p
+              | © 2014 Template by 
+              a(href='http://w3layouts.com', target='_blank') w3layouts
+          .f-list2
+            ul
+              li.active
+                a(href='about.html') About Us
+              |  |
+              li
+                a(href='delivery.html') Delivery & Returns
+              |  |
+              li
+                a(href='delivery.html') Terms & Conditions
+              |  |
+              li
+                a(href='contact.html') Contact Us
+          .clear

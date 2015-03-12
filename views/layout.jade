@@ -1,9 +1,11 @@
 doctype html
 html
-  head
-    title= title
-    // link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='/stylesheets/screen.css')
-    link(rel='stylesheet', href='/stylesheets/ie.css')
-  body
-    block content
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/screen.css')
+		link(rel='stylesheet', href='/stylesheets/ie.css')
+		link(rel='stylesheet', href='/stylesheets/footer.css')
+	body
+		block content
+
+		include footer.jade
