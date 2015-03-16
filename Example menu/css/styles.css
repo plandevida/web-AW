@@ -1,0 +1,8 @@
+.option {
+	float: left;
+	margin-right: 10pt;
+}
+
+.subOptions  {
+	display: none;	
+}
