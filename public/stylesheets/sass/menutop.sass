@@ -1,9 +1,24 @@
 #supermenu
 	width: 100%
 	font: 18px "Lucida Grande", Helvetica, Arial, sans-serif
+	font-style: italic
 	padding: 5px
 	background-color: #4cb1ca
 	display: inline-block
+	//position: relative
+	z-index: 100
 
 .menu
+	display: block
+	padding: 3px
 	float: left
+	transition: all 0.2s ease-in-out 0s
+
+.menu a
+	color: #000
+
+.menu a:hover
+	background-color: #9CA3DA
+
+.menu .submenu
+	display: none
