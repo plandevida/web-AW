@@ -1,21 +1,22 @@
 #supermenu
 	width: 100%
 	font: 18px "Lucida Grande", Helvetica, Arial, sans-serif
-	font-style: italic
-	padding: 5px
 	background-color: #4cb1ca
 	display: inline-block
 	position: relative
 	z-index: 100
 
+#supermenu a
+	text-decoration: none
+
 .menu
+	border: 5px solid #4cb1ca
 	display: block
-	padding: 3px
+	padding: 5px
 	float: left
 	transition: all 0.2s ease-in-out 0s
 
 .menu a
-	text-decoration:none
 	color: #000
 
 // Hacer que aparezcan los submenus
@@ -23,18 +24,29 @@
 	display: block
 
 // Color de fondo cuando pasas con el ratón
+.menu:hover
+	border: 5px solid #7dd8ed
+
 .menu a:hover
-	background-color: #9CA3DA
+	color: #fff
 
 // Ocultar los submenus
 .menu .submenu
+	font-style: italic
 	display: none
-	background-color: #fff
-	padding: 10px
+	background-color: #f0f0f0
 	position: absolute
 
+// Estilo del submenu
 .menu .submenu a
 	display: block
 	float: none
-	margin: 0
-	padding: 0
+	padding: 10px
+	border-left: 8px solid #f0f0f0
+	color: #797979
+
+// Cuando el ratón pasa por el submenu
+.menu .submenu a:hover
+	background-color: #65c3d8
+	color: #fff
+	border-left: 8px solid #9CA3DA

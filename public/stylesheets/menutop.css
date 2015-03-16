@@ -2,49 +2,66 @@
 #supermenu {
   width: 100%;
   font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
-  font-style: italic;
-  padding: 5px;
   background-color: #4cb1ca;
   display: inline-block;
   position: relative;
   z-index: 100;
 }
 
-/* line 11, sass/menutop.sass */
+/* line 9, sass/menutop.sass */
+#supermenu a {
+  text-decoration: none;
+}
+
+/* line 12, sass/menutop.sass */
 .menu {
+  border: 5px solid #4cb1ca;
   display: block;
-  padding: 3px;
+  padding: 5px;
   float: left;
   transition: all 0.2s ease-in-out 0s;
 }
 
-/* line 17, sass/menutop.sass */
+/* line 19, sass/menutop.sass */
 .menu a {
   color: #000;
 }
 
-/* line 22, sass/menutop.sass */
+/* line 23, sass/menutop.sass */
 .menu:hover > .submenu {
   display: block;
 }
 
-/* line 26, sass/menutop.sass */
-.menu a:hover {
-  background-color: #9CA3DA;
+/* line 27, sass/menutop.sass */
+.menu:hover {
+  border: 5px solid #7dd8ed;
 }
 
 /* line 30, sass/menutop.sass */
+.menu a:hover {
+  color: #fff;
+}
+
+/* line 34, sass/menutop.sass */
 .menu .submenu {
+  font-style: italic;
   display: none;
-  background-color: #fff;
-  padding: 10px;
+  background-color: #f0f0f0;
   position: absolute;
 }
 
-/* line 36, sass/menutop.sass */
+/* line 41, sass/menutop.sass */
 .menu .submenu a {
   display: block;
   float: none;
-  margin: 0;
-  padding: 0;
+  padding: 10px;
+  border-left: 8px solid #f0f0f0;
+  color: #797979;
+}
+
+/* line 49, sass/menutop.sass */
+.menu .submenu a:hover {
+  background-color: #65c3d8;
+  color: #fff;
+  border-left: 8px solid #9CA3DA;
 }
