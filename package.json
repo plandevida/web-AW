@@ -9,8 +9,8 @@
     "compile":"npm run compile-compass && npm run start",
     "compile-compass":"compass compile",
     "watch-sass":"compass watch . &",
-    "stop-watch-sass":"kill -9 compass",
-    "devmode":"npm run watch-sass && npm run start"
+    "stop-watch-sass":"./stopCompass.sh . &",
+    "devmode":"npm run watch-sass && npm run stop-watch-sass && npm run start"
   },
   "repository":{
     "type":"git",
