@@ -1,0 +1,33 @@
+/* line 1, sass/menutop.sass */
+#supermenu {
+  width: 100%;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  padding: 5px;
+  background-color: #4cb1ca;
+  display: inline-block;
+  z-index: 100;
+}
+
+/* line 11, sass/menutop.sass */
+.menu {
+  display: block;
+  padding: 3px;
+  float: left;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+/* line 17, sass/menutop.sass */
+.menu a {
+  color: #000;
+}
+
+/* line 20, sass/menutop.sass */
+.menu a:hover {
+  background-color: #9CA3DA;
+}
+
+/* line 23, sass/menutop.sass */
+.menu .submenu {
+  display: none;
+}
