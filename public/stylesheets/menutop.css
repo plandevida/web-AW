@@ -44,10 +44,10 @@
 
 /* line 34, sass/menutop.sass */
 .menu .submenu {
+  position: absolute;
   font-style: italic;
   display: none;
   background-color: #f0f0f0;
-  position: absolute;
 }
 
 /* line 41, sass/menutop.sass */

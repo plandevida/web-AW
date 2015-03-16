@@ -36,10 +36,10 @@
 }
 
 .menu .submenu {
+  position: absolute;
   font-style: italic;
   display: none;
   background-color: #f0f0f0;
-  position: absolute;
 }
 
 .menu .submenu a {
