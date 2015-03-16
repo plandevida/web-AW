@@ -1,29 +1,24 @@
-/* line 1, sass/footer.sass */
 #footer {
   padding: 30px;
   background-color: #4cb1ca;
   color: #ffffff;
 }
 
-/* line 6, sass/footer.sass */
 #footer a {
   color: #4c00ca;
 }
 
-/* line 9, sass/footer.sass */
 #footer p span {
   font-style: italic;
   text-shadow: 5px 5px 5px #000000;
 }
 
-/* line 13, sass/footer.sass */
 #footer #social {
   margin-left: auto;
   margin-right: 0px;
   width: 192px;
 }
 
-/* line 19, sass/footer.sass */
 #footer #reficons {
   text-align: center;
   margin-left: auto;
@@ -31,7 +26,6 @@
   width: 13em;
 }
 
-/* line 26, sass/footer.sass */
 #footer #social-icons img {
   max-width: 64px;
   max-height: 64px;
