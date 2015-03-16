@@ -6,6 +6,7 @@
   padding: 5px;
   background-color: #4cb1ca;
   display: inline-block;
+  position: relative;
   z-index: 100;
 }
 
@@ -32,8 +33,18 @@
   background-color: #9CA3DA;
 }
 
-/* line 29, sass/menutop.sass */
+/* line 30, sass/menutop.sass */
 .menu .submenu {
   display: none;
   background-color: #fff;
+  padding: 10px;
+  position: absolute;
+}
+
+/* line 36, sass/menutop.sass */
+.menu .submenu a {
+  display: block;
+  float: none;
+  margin: 0;
+  padding: 0;
 }

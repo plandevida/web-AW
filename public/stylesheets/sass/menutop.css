@@ -5,6 +5,7 @@
   padding: 5px;
   background-color: #4cb1ca;
   display: inline-block;
+  position: relative;
   z-index: 100;
 }
 
@@ -19,7 +20,7 @@
   color: #000;
 }
 
-.menu a:hover > .submenu {
+.menu:hover > .submenu {
   display: block;
 }
 
@@ -30,4 +31,13 @@
 .menu .submenu {
   display: none;
   background-color: #fff;
+  padding: 10px;
+  position: absolute;
+}
+
+.menu .submenu a {
+  display: block;
+  float: none;
+  margin: 0;
+  padding: 0;
 }
