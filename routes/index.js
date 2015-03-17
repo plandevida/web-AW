@@ -10,7 +10,7 @@ router.get('/leoshop', function(req, res, next) {
 	res.render('leoshop-web/index');
 });
 
-router.get('/blog', function(req, res, next) {
+router.get('/blog/`name`', function(req, res, next) {
 	res.render('blog');
 });
 

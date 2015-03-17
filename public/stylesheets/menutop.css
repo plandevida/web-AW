@@ -12,9 +12,8 @@
 }
 
 .menu {
-  border: 5px solid #4cb1ca;
   display: block;
-  padding: 5px;
+  padding: 10px;
   float: left;
   transition: all 0.4s ease-in-out 0s;
 }
@@ -23,12 +22,12 @@
   color: #000;
 }
 
-.menu:hover > .submenu {
-  display: block;
+.menu span {
+  text-align: center;
 }
 
-.menu:hover {
-  border: 5px solid #7dd8ed;
+.menu:hover > .submenu {
+  display: block;
 }
 
 .menu a:hover {
@@ -40,6 +39,7 @@
   font-style: italic;
   display: none;
   background-color: #f0f0f0;
+  padding: 0px;
 }
 
 .menu .submenu a {
