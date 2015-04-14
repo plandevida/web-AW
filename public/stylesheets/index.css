@@ -1,10 +1,18 @@
-#caja {
-  border: 4px solid #000;
+#cuerpo {
+  height: 300px;
 }
 
-#caja .cajapeq {
+#caja {
   float: right;
-  border: 2px solid #777;
+  height: 132px;
+  box-shadow: 5px 5px 3px #000;
+  margin: 5px;
+}
+
+#caja #vertical {
+  float: right;
+  width: 64px;
+  height: 128px;
 }
 
 #caja .cajapeq img {
@@ -16,5 +24,4 @@
   float: right;
   width: 128px;
   height: 128px;
-  border: 2px solid #444;
 }
