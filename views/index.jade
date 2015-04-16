@@ -2,12 +2,13 @@ extends layout
 
 block content
 	#cuerpo
-		#caja
-			#vertical
+		.caja
+			.vertical
 				.cajapeq
 					.producto
-						img(src='/images/twitter-icon.png')
-						p Twitter
+						p#texto-producto Twitter
+						img#imagen(src='/images/twitter-icon.png')
+						
 				.cajapeq
 					.producto
 						img(src='/images/g+-icon.png')
@@ -16,8 +17,8 @@ block content
 				.producto
 					img(src='/images/facebook-icon-256.png')
 					p Facebook
-		#caja
-			#vertical
+		.caja
+			.vertical
 				.cajapeq
 					.producto
 						img(src='/images/twitter-icon.png')
