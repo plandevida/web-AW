@@ -10,11 +10,6 @@
   margin: 5px;
 }
 
-.producto #imagen {
-  position: absolute;
-  margin: -20 0 0;
-}
-
 .caja .vertical {
   float: right;
   width: 128px;
@@ -30,4 +25,11 @@
   float: right;
   width: 256px;
   height: 256px;
+}
+
+.producto .texto-producto {
+  position: relative;
+  z-index: 100;
+  text-align: center;
+  top: -30px;
 }
