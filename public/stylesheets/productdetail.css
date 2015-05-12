@@ -1,0 +1,51 @@
+#product {
+  display: inline-block;
+  background-color: #d7e9ed;
+}
+
+#product #productimage, #productdetails {
+  float: left;
+  margin-right: 25px;
+}
+
+#product #productimage {
+  width: 256px;
+  margin: 25px;
+}
+
+#product #productimage img {
+  width: 256px;
+}
+
+#product #productdetails #rating img {
+  max-width: 24px;
+  max-height: 24px;
+}
+
+#product #productdetails #price {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: "Lucida Console";
+  font-size: 20px;
+  text-align: right;
+}
+
+#product #productdetails #socialshare a img {
+  max-width: 32px;
+  max-height: 32px;
+  margin-top: 5px;
+}
+
+#product #productdetails #description {
+  width: 350px;
+  height: 220px;
+  background-color: #fff;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+#product #productdetails #buy {
+  margin-bottom: 10px;
+}

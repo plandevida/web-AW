@@ -10,8 +10,10 @@ router.get('/leoshop', function(req, res, next) {
 	res.render('leoshop-web/index');
 });
 
-router.get('/blog/`name`', function(req, res, next) {
-	res.render('blog');
+router.get('/product/*', function(req, res, next) {
+	var producto = req['params']['0'];
+	var dic = { product: producto };
+	res.render('product', dic);
 });
 
 module.exports = router;
