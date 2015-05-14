@@ -9,8 +9,9 @@ html
 		link(rel='stylesheet', href='/stylesheets/footer.css')
 		link(rel='stylesheet', href='/stylesheets/productdetail.css')
 	body
-		include menutop
-		
-		block content
+		div#wrapper
+			include menutop
 
-		include footer.jade
+			block content
+
+			include footer.jade

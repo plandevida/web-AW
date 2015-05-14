@@ -1,10 +1,22 @@
-#cuerpo {
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#wrapper {
+  background-image: url("../images/stardust.png");
+  min-height: 100%;
+  position: relative;
+}
+
+body #cuerpo {
   display: inline-block;
+  padding-bottom: 220px;
 }
 
 .caja {
   float: left;
-  display: inline-block;
   background-color: rgba(76, 177, 202, 0.7);
   border-radius: 10px;
   margin: 5px;
