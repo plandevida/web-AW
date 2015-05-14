@@ -1,0 +1,10 @@
+@media only screen and (max-width: 508px) {
+  .caja {
+    float: left;
+    background-color: rgba(76, 177, 202, 0.7);
+    border-radius: 10px;
+    margin: 5px;
+    max-width: 384px;
+    width: 256px;
+  }
+}
