@@ -1,27 +1,33 @@
 extends layout
 
 block content
-	#product
-		#productimage
-			img(src='/images/kate.jpg')
-		#productdetails
-			h1 Title
-			#rating
-				img(src='/images/star.png')
-				img(src='/images/star.png')
-				img(src='/images/star.png')
-				img(src='/images/starfull.png')
-				img(src='/images/starfull.png')
-			p#price 0 €
-			#socialshare
-				a(href='#')
-					img(src='/images/twitter-icon.png')
-				a(href='#')
-					img(src='/images/facebook-icon.png')
-				a(href='#')
-					img(src='/images/g+-icon.png')
-			p#description description
-			form(action='javascript/buy.js')
-				input#buy(value='Buy now', type='submit')
-				input(type='text', name='producto', value='{product}', style='display:none;')
+	script
+		include ../public/javascript/producto.js
+
+	p#productid(style='display:none;') #{product}
+
+	#productos
+		#product
+			#productimage
+				img(src='/images/falda.jpg')
+			#productdetails
+				h1 Title
+				#rating
+					img(src='/images/star.png')
+					img(src='/images/star.png')
+					img(src='/images/star.png')
+					img(src='/images/star.png')
+					img(src='/images/star.png')
+				p#price 0 €
+				#socialshare
+					a(href='#')
+						img(src='/images/twitter-icon.png')
+					a(href='#')
+						img(src='/images/facebook-icon.png')
+					a(href='#')
+						img(src='/images/g+-icon.png')
+				p#description description
+				form(action='javascript/buy.js')
+					input#buy(value='Buy now', type='submit')
+					input(type='text', name='producto', value='#{product}', style='display:none;')
 		

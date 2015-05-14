@@ -6,13 +6,13 @@ router.get('/', function(req, res, next) {
 	res.render('index', { title: 'Web AW' });
 });
 
-router.get('/leoshop', function(req, res, next) {
-	res.render('leoshop-web/index');
+router.get('/shop/*', function(req, res, next) {
+	var dic = { category: req['params']['0'] };
+	res.render('index', dic);
 });
 
 router.get('/product/*', function(req, res, next) {
-	var producto = req['params']['0'];
-	var dic = { product: producto };
+	var dic = { product: req['params']['0'] };
 	res.render('product', dic);
 });
 

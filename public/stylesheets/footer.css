@@ -17,6 +17,20 @@
   text-shadow: 5px 5px 5px #000000;
 }
 
+#footer #githubfork {
+  float: left;
+  display: inline-block;
+}
+
+#footer #githubfork {
+  float: left;
+}
+
+#footer #githubfork img {
+  max-width: 64px;
+  max-height: 64px;
+}
+
 #footer #social {
   margin-left: auto;
   margin-right: 0;

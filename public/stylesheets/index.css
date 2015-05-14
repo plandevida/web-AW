@@ -23,6 +23,16 @@ body #cuerpo {
   max-width: 384px;
 }
 
+.caja .cajagra a img {
+  max-width: 256px;
+  max-height: 256px;
+}
+
+.caja .cajapeq a img {
+  max-width: 128px;
+  max-height: 128px;
+}
+
 .caja .cajapeq {
   float: left;
   width: 128px;
